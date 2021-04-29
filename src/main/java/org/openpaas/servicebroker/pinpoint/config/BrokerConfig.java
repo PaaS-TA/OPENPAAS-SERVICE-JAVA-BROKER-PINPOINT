@@ -34,7 +34,7 @@ public class BrokerConfig {
                 securityConstraint.setUserConstraint("CONFIDENTIAL");
                 SecurityCollection collection = new SecurityCollection();
                 collection.addPattern("/*");
-                collection.addMethod("DELETE");
+                //collection.addMethod("DELETE");
                 collection.addMethod("OPTIONS");
                 securityConstraint.addCollection(collection);
                 context.addConstraint(securityConstraint);
